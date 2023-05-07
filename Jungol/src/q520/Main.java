@@ -1,12 +1,16 @@
-package Practice;
+package q520;
 
 import java.util.Scanner;
 
-public class Scanner_Prac {
-	
+public class Main {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int inp = sc.nextInt();
+		int num = sc.nextInt();
 		sc.close();
+		
+		System.out.println(num++);
+		System.out.println(++num);
 	}
+
 }
