@@ -1,19 +1,17 @@
-package q519;
+package q521;
 
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int num1 = sc.nextInt();
-		int num2 = sc.nextInt();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 		sc.close();
 		
-		num1 += 100;
-		num2 %= 10;
 		
-		System.out.print(num1 + " ");
-		System.out.print(num2);
+		int c = a++ * --b;
+		
+		System.out.print(a + " " + b + " " + c);
 	}
-
 }

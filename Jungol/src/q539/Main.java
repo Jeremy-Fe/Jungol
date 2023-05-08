@@ -17,8 +17,8 @@ public class Main {
 			if(num >= 100)
 				break;
 		}
-		
 		sc.close();
+		
 		avg = (double)sum/count;
 		System.out.println(sum);
 		System.out.printf("%.1f", avg);
