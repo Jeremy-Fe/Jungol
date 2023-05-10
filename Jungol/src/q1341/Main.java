@@ -8,7 +8,7 @@ public class Main {
 		int s = sc.nextInt();
 		int e = sc.nextInt();
 		sc.close();
-		// 오늘도 정말 고생 많으셨고 내일도 화이팅 합시다 행님덜
+		
 		if(s < e) {
 			for (int i = s; i <= e; i++) {
 				for (int j = 1; j <= 9; j++) {
