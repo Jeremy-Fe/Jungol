@@ -8,7 +8,8 @@ public class Main {
 		int[] num = new int[100];		
 		
 		for (int i = 0; i < num.length; i++) {
-			num[0] = sc.nextInt();
+			num[i] = sc.nextInt();
+
 			
 			if(num[i] == 0) {
 				for (int j = i-1; j >= 0; j--) {

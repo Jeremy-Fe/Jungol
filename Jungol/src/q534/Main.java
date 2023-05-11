@@ -9,18 +9,33 @@ public class Main {
 		sc.close();
 		
 		// 아스키코드 A : 65 , B : 66 ... F : 70 (성적엔 E가 없어서 69는 없음)
-		if(word == 65) {
+		if(word == 65) { // 65 == 'A'
 			System.out.println("Excellent");
-		} else if (word == 66) {
+		} else if (word == 'B') {
 			System.out.println("Good");
-		} else if (word == 67) {
+		} else if (word == 'C') {
 			System.out.println("Usually");
-		} else if (word == 68) {
+		} else if (word == 'D') {
 			System.out.println("Effort");
-		} else if (word == 70) {
+		} else if (word == 'F') {
 			System.out.println("Failure");
 		} else {
 			System.out.println("error");
 		}
+		
+		
+//		switch(word) {
+//		case 'A': System.out.println("Excellent");
+//			break;
+//		case 'B': System.out.println("Good");
+//			break;
+//		case 'C': System.out.println("Usually");
+//			break;
+//		case 'D': System.out.println("Effort");
+//			break;
+//		case 'F': System.out.println("Failure");
+//			break;
+//		default : System.out.println("error");
+//		}
 	}
 }
