@@ -11,9 +11,9 @@ public class Main {
 			if((num % 3) == 0) {
 				System.out.println(num / 3);
 			} else if (num == -1) {
+				sc.close();
 				break;
 			} 
 		}
-		sc.close();
 	}
 }
