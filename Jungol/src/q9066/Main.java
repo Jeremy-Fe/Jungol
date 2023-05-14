@@ -5,7 +5,7 @@ public class Main {
 		char alphabet[] = new char[26];
 		
 		for (int i = 0; i < alphabet.length; i++) {
-			alphabet[i] = (char) (i+65);
+			alphabet[i] = (char) (65 + i);
 		}
 		for (int i = alphabet.length-1; i >= 0; i--) {
 			System.out.print(alphabet[i] + " ");
