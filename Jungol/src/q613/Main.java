@@ -1,13 +1,21 @@
 package q613;
 
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {		
-		School code = new School(); // School 클래스 불러오기
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println(code.Name);
-		System.out.println(code.School);
-		System.out.println(code.Grade);
+		String inpName = sc.next();
+		String inpSchool = sc.next();
+		int inpGrade = sc.nextInt();
+		sc.close();
 		
+		School s = new School(inpName, inpSchool, inpGrade);
+		
+		System.out.println("Name : " + s.name);
+		System.out.println("School : " + s.school);
+		System.out.println("Grade : " + s.grade);
 		
 	}
 }

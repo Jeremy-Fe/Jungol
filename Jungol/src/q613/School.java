@@ -1,13 +1,16 @@
 package q613;
 
-import java.util.Scanner;
-
 public class School {
-	// 필드
-	Scanner sc = new Scanner(System.in);
+	String name;
+	String school;
+	int grade;
 	
-	String Name = "Name : " + sc.next();
-	String School = "School : " + sc.next();
-	String Grade = "Grade : " + sc.next();
-	
+	School(){
+		
+	}
+	School(String n, String s, int g){
+		name = n;
+		school = s;
+		grade = g;
+	}
 }
