@@ -7,7 +7,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int arr[] = new int[10];
 		
-		int max = 1;
+		int max = 0;
 		int min = 9999;
 		
 		for (int i = 0; i < arr.length; i++) {
