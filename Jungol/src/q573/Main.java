@@ -6,8 +6,8 @@ public class Main {
 	
 	static void square(int n) {
 		int x = 1;
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
 				System.out.print(x + " ");
 //				System.out.printf("%-2s ",x); // 이게 더 적절하지만 정올에서는 0점
 				x++;
