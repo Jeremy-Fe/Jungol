@@ -13,9 +13,7 @@ public class Prac {
 				break;
 			}
 		}
-		
 		gugudan.gugu(n);
-
 	}
 }
 class gugudan {
@@ -23,8 +21,8 @@ class gugudan {
 		int x = 1;
 		for (int i = 0; i < num; i++) {
 			for (int j = 0; j < num; j++) {
-//				System.out.print(x++ + " ");
-				System.out.printf("%2s ", x++);
+				System.out.print(x++ + " ");
+//				System.out.printf("%2s ", x++);
 			}
 			System.out.println();
 		}

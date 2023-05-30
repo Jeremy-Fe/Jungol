@@ -1,23 +1,18 @@
 package Practice;
 
+import java.util.Scanner;
+
 public class Prac2 {
-	private String name;
-    private int age;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		sc.close();
 
-
-
-    public String getName() {
-        return name;
-
-    }
-    public void setName(String name) {
-        this.name = name;
-
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    } 
+		for (int i = 1; i <= (a * a); i++) {
+			System.out.print(i + " ");
+			if (i % a*i == 0) {
+				System.out.println();
+			}
+		}
+	}
 }
