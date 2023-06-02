@@ -7,7 +7,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.next();
 		sc.close();
-		String str2 = "";
+		String str2;
 		
 		for (int i = 0; i < str.length(); i++) {
 			str2 = str.substring(str.length()-1, str.length());

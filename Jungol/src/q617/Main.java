@@ -4,34 +4,45 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		// 재미 좃나 없네
 		Scanner sc = new Scanner(System.in);
-		Member M = new Member(sc.next(), sc.nextInt());
 
-		M.small(sc.next(), sc.nextInt());
-		M.small(sc.next(), sc.nextInt());
-		M.small(sc.next(), sc.nextInt());
-		M.small(sc.next(), sc.nextInt());
+		Member M[] = new Member[5];
+		for (int i = 0; i < M.length; i++) {
+			String name = sc.next();
+			int height = sc.nextInt();
+			M[i] = new Member(name, height);
+		}
 		sc.close();
-		System.out.println(M.smallPerson + " " + M.smallHeight);
+		
+		Member min = M[0];
+		for (int i = 0; i < M.length; i++) {
+			if(min.getHeight() > M[i].getHeight()) {
+				min = M[i];
+			}
+		}
+		
+		min.print();
+		
+
 	}
 }
 class Member {
-	String name;
-	int height;
-	String smallPerson;
-	int smallHeight;
+	private String name;
+	private int height;
 
-	Member(String name, int height) {
+	// setter
+	public Member(String name, int height) {
 		this.name = name;
 		this.height = height;
 	}
 
-	void small(String name, int height) {
-		if (this.height > height) {
-			smallHeight = height;
-			smallPerson = name;
-		}
+	// getter
+	public void print() {
+		System.out.println(name + " " + height);
+	}
+	
+	public int getHeight() {
+		return height;
 	}
 
 }
